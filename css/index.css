@@ -1,0 +1,26 @@
+body {
+    background: #eee;
+}
+
+header {
+       max-width: 1000px;
+      margin:auto; 
+       background: url(https://assets-cdn.audionetwork.com/usr/common/MF_2_745x200.png);
+    background-size: cover; 
+}
+
+main {
+    max-width: 1000px;
+    margin:auto;
+    background: #fff;
+}
+
+footer {
+    max-width: 1000px;
+    margin:auto;
+    background: #fff;
+}
+.inline {
+display:inline-block;
+vertical-align: top;
+}
