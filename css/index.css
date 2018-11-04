@@ -1,26 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Niramit|Varela+Round');
+
 body {
+    max-width: 980px;
     background: #eee;
+        margin: auto;
 }
 
-header {
-       max-width: 1000px;
-      margin:auto; 
-       background: url(https://assets-cdn.audionetwork.com/usr/common/MF_2_745x200.png);
-    background-size: cover; 
+header .header-logo {
+    background:url(https://assets-cdn.audionetwork.com/usr/common/MF_2_745x200.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5rem;
+    text-shadow: 2px 2px 3px #a41c1c;
+    margin:0;
 }
+
+header .menu {
+    height: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .menu li {
+    display: inline;
+}
+
+header .menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Niramit', sans-serif;
+}
+
+header .menu li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+    header nav {
+        display: flex;
+    }
+    header .header-logo {
+        margin: 0 2%;
+    }
+    header .menu {
+        flex: 1;
+        align-items: center;
+        justify-content: left;
+    }
+    header .menu li {
+        margin: 0 2%;
+    }
+
+}
+
 
 main {
-    max-width: 1000px;
+    max-width: 980px;
     margin:auto;
     background: #fff;
+}
+
+main .music-list {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Niramit', sans-serif;
+}
+
+main .music-list img {
+    display: block;
+    width: 100px;
+}
+
+@media (min-width: 400px) {
+    .music-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .music-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .music-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 footer {
-    max-width: 1000px;
+    max-width: 980px;
     margin:auto;
     background: #fff;
-}
-.inline {
-display:inline-block;
-vertical-align: top;
 }
