@@ -24,6 +24,7 @@ header .menu {
     padding: 0;
     display: flex;
     justify-content: space-around;
+
 }
 
 header .menu li {
@@ -64,6 +65,8 @@ main {
     max-width: 980px;
     margin:auto;
     background: #fff;
+    text-align: center;
+    word-spacing: -5px;
 }
 
 main .music-list {
@@ -73,27 +76,50 @@ main .music-list {
     font-family: 'Niramit', sans-serif;
 }
 
-main .music-list img {
-    display: block;
-    width: 100px;
+.music_container {
+    display: inline-block;
+    width: 100%;
 }
 
-@media (min-width: 400px) {
-    .music-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+.music_container article{
+    word-spacing: 0px;
+}
+
+
+
+.music-list  img{
+display: inline-block;
+height: 120px;
+}
+
+.music-list h4 {
+    display: inline-block;
+    width: 30%;
+}
+
+.music-list {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+@media (max-width: 800px) {
+.music_container {
+    width: 25%;
+}
+}
+
+
+@media (max-width: 600px) {
+    .music_container {
+        width: 33%;
     }
 }
 
-@media (min-width: 600px) {
-    .music-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 800px) {
-    .music-list {
-        grid-template-columns: repeat(4, 1fr);
+@media (max-width: 400px) {
+    .music_container {
+        width: 50%;
     }
 }
 
