@@ -35,7 +35,74 @@ header .header-logo {
     }
 
 }
-//player
+
+
+
+
+
+main {
+    max-width: 980px;
+    margin:auto;
+    background: #fff;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+main .music_container {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Niramit', sans-serif;
+}
+
+.music_container {
+    display: inline-block;
+    width: 100%;
+}
+
+.music_container {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.music_container img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 400px) {
+    .music_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .music_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .music_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .music_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+    
+
+
+
+
+
 audio:hover, audio:focus, audio:active
 {
 -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
@@ -61,67 +128,11 @@ border-radius:7px 7px 7px 7px ;
 }
 
 
-main {
+
+footer {
     max-width: 980px;
     margin:auto;
     background: #fff;
-    text-align: center;
-    word-spacing: -5px;
 }
-
-main .music-list {
-    border: 1px solid black;
-    padding: 5px;
-    margin: 5px;
-    font-family: 'Niramit', sans-serif;
-}
-
-.music_container {
-    display: inline-block;
-    width: 100%;
-}
-
-.music_container article{
-    word-spacing: 0px;
-}
-
-
-
-.music-list  img{
-display: inline-block;
-height: 120px;
-}
-
-.music-list h4 {
-    display: inline-block;
-    width: 30%;
-}
-
-.music-list {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-}
-
-
-@media (max-width: 800px) {
-.music_container {
-    width: 50%;
-}
-}
-
-
-@media (max-width: 600px) {
-    .music_container {
-        width: 60%;
-    }
-}
-
-@media (max-width: 400px) {
-    .music_container {
-        width: 80%;
-    }
-}
-
 
     
