@@ -15,33 +15,9 @@ header .header-logo {
     justify-content: center;
     font-family: 'Varela Round', sans-serif;
     font-size: 5rem;
-    text-shadow: 2px 2px 3px #a41c1c;
+    text-shadow: 2px 2px 3px #196cc5;
     margin:0;
 }
-
-header .menu {
-    height: 20px;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-header .menu li {
-    display: inline;
-}
-
-header .menu li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-family: 'Niramit', sans-serif;
-}
-
-header .menu li a:hover {
-    text-decoration: underline;
-}
-
 @media (min-width: 500px) {
     header nav {
         display: flex;
@@ -58,6 +34,30 @@ header .menu li a:hover {
         margin: 0 2%;
     }
 
+}
+//player
+audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #006773;
+-webkit-box-shadow:  2px 2px 4px 0px #006773;
+box-shadow: 2px 2px 4px 0px #006773;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
 }
 
 
@@ -106,25 +106,22 @@ height: 120px;
 
 @media (max-width: 800px) {
 .music_container {
-    width: 25%;
+    width: 50%;
 }
 }
 
 
 @media (max-width: 600px) {
     .music_container {
-        width: 33%;
+        width: 60%;
     }
 }
 
 @media (max-width: 400px) {
     .music_container {
-        width: 50%;
+        width: 80%;
     }
 }
 
-footer {
-    max-width: 980px;
-    margin:auto;
-    background: #fff;
-}
+
+    
