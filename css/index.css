@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Niramit|Varela+Round');
 
 body {
-    max-width: 980px;
+    margin: auto !important;
+    max-width: 1200px;
     background: #eee;
-        margin: auto;
 }
 
 header .header-logo {
     background:url(https://assets-cdn.audionetwork.com/usr/common/MF_2_745x200.png);
+    max-width: 1200px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -18,7 +19,7 @@ header .header-logo {
     text-shadow: 2px 2px 3px #196cc5;
     margin:0;
 }
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     header nav {
         display: flex;
     }
@@ -55,50 +56,24 @@ main .music_container {
     font-family: 'Niramit', sans-serif;
 }
 
-.music_container {
-    display: inline-block;
-    width: 100%;
-}
 
-.music_container {
-    border: 1px solid black;
-    padding: 5px;
-    margin: 5px;
-}
-
-
-.music_container img {
+.music-list img {
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
-@media (min-width: 400px) {
-    .music_container {
+@media (min-width: 800px) {
+    main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 600px) {
-    .music_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 800px) {
-    .music_container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 980px) {
-    .music_container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-    
-
+    //@media (min-width: 600px) {
+    //    main {
+    //        grid-template-columns: repeat(2, 1fr);
+    //    }
+    //}
 
 
 
@@ -130,7 +105,7 @@ border-radius:7px 7px 7px 7px ;
 
 
 footer {
-    max-width: 980px;
+    max-width: 1200px;
     margin:auto;
     background: #fff;
 }
