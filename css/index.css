@@ -36,11 +36,6 @@ header .header-logo {
     }
 
 }
-
-
-
-
-
 main {
     max-width: 980px;
     margin:auto;
@@ -56,13 +51,12 @@ main .music_container {
     font-family: 'Niramit', sans-serif;
 }
 
-
 .music-list img {
     display: block;
     max-width: 100%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -74,8 +68,6 @@ main .music_container {
     //        grid-template-columns: repeat(2, 1fr);
     //    }
     //}
-
-
 
 
 audio:hover, audio:focus, audio:active
